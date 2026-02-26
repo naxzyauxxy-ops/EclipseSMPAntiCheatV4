@@ -1,0 +1,24 @@
+name: EclipseAC
+version: '1.1.0'
+main: dev.eclipseac.EclipseAC
+api-version: '1.21'
+description: High-accuracy anticheat for Paper 1.21.x
+authors: [EclipseAC]
+
+commands:
+  eclipseac:
+    description: EclipseAC main command
+    aliases: [eac, eclipse]
+    usage: /eclipseac <reload|alerts|info|reset|kick|version>
+    permission: eclipseac.admin
+
+permissions:
+  eclipseac.admin:
+    description: Access to all EclipseAC commands
+    default: op
+  eclipseac.alerts:
+    description: Receive violation alerts in chat
+    default: op
+  eclipseac.bypass:
+    description: Bypass all EclipseAC checks
+    default: false
